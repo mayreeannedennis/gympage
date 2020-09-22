@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* h1{color: red;
+            font-size: 200px;
+            text-align: center;
+
+        }
+        @media(max-width: 900px){
+            h1{font-size: 100px;
+            display: none;}
+        }
+        @media(max-width: 700px){
+            h1{font-size: 50px;
+                display: block;
+            }
+        }
+
+        @media(max-width: 400px){
+            h1{font-size: 20px;
+           }
+        } */
+
+#menu a{
+    text-decoration: none;
+}
+.showmenu{
+    display: none; 
+}
+    @media(max-width:900px){
+        .menu {
+            display: none; 
+        }
+        .mary{
+            display: block;
+        }
+         
+        .showmenu{
+            display: block;
+        }
+       
+        
+        }
+        
+    
+    </style>
+</head>
+
+<body>
+    <!-- <div id="logo">
+        <h1>Mylogo</h1>
+    </div> -->
+    <div class="menu">
+        <a href="#">HOME</a>
+        <a href="#">ABOUT</a>
+        <a href="#">CONTACT</a>
+    </div>
+    <button class="showmenu">MENU</button>
+    <script>
+        let myBtn = document.querySelector(".showmenu");
+        let mymenu =document.querySelector(".menu");
+        myBtn.addEventListener("click", Show);
+        function Show() {
+            mymenu.classList.toggle("mary");
+               
+        }
+        
+    </script>
+</body>
+</html>  
